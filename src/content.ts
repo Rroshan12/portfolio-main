@@ -5,7 +5,6 @@ import CursorIcon from '$/icons/cursor.svg'
 
 import GithubIcon from '$/icons/github.svg'
 import LinkedInIcon from '$/icons/linkedin.svg'
-import TelegramIcon from '$/icons/telegram.svg'
 import ReactIcon from '$/icons/about/react.svg'
 import AWSIcon from '$/icons/about/aws.svg'
 import DotNetIcon from '$/icons/about/dotnet.svg'

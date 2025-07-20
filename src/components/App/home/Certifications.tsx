@@ -6,21 +6,8 @@ import Block from '~/UI/Block'
 import { SPAN } from '~/UI/Typography'
 import Image from 'next/image'
 
-interface CertificationProps {
-  title: string
-  certifications: Array<{
-    name: string
-    issuer: string
-    imageUrl: string
-    description: string
-    color: string
-    link?: string
-  }>
-  delay?: number
-}
 
 export default function Certifications({ delay = 0 }: { delay?: number }) {
-  const [hoveredCert, setHoveredCert] = useState<number | null>(null)
 
   const certifications = [
     {
@@ -42,7 +29,7 @@ export default function Certifications({ delay = 0 }: { delay?: number }) {
   ]
 
   return (
-    <Block delay={delay}>
+    <Block delay={delay} section="certifications">
       <div className="space-y-6">
         <div className="text-center space-y-2">
           <h2 className="text-2xl font-bold text-white">
@@ -66,8 +53,6 @@ export default function Certifications({ delay = 0 }: { delay?: number }) {
                 'transition-all duration-500',
                 'overflow-hidden'
               )}
-              onMouseEnter={() => setHoveredCert(index)}
-              onMouseLeave={() => setHoveredCert(null)}
               onClick={() => cert.link && window.open(cert.link, '_blank')}
             >
               {/* Animated background gradient */}
