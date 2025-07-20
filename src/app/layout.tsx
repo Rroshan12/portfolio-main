@@ -10,6 +10,7 @@ import {Analytics as VercelAnalytics} from '@vercel/analytics/react'
 import Header from '~/Global/Header'
 import YandexMetrika from '~/Global/Analytics'
 import GraphBackground from '~/Global/GraphBackground'
+import Footer from '~/Global/Footer'
 
 export default function RootLayout({
   children,
@@ -22,6 +23,8 @@ export default function RootLayout({
         <GraphBackground />
         <Header />
         {children}
+
+        <Footer />
 
         {process.env.NODE_ENV === 'production' && (
           <>
