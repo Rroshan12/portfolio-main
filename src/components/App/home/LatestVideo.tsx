@@ -2,7 +2,6 @@
 
 import { cn } from '@/lib/utils'
 import Block from '~/UI/Block'
-import { SPAN } from '~/UI/Typography'
 import Image from 'next/image'
 
 export default function LatestVideo({ delay = 0 }: { delay?: number }) {
