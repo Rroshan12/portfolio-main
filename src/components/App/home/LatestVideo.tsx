@@ -3,9 +3,6 @@
 import { cn } from '@/lib/utils'
 import Block from '~/UI/Block'
 import Image from 'next/image'
-import ReactIcon from '$/icons/about/react.svg'
-import DotNetIcon from '$/icons/about/dotnet.svg'
-import NodeJSIcon from '$/icons/about/nodejs.svg'
 import SkillSection from './SkillSection'
 
 export default function LatestVideo({ delay = 0 }: { delay?: number }) {
