@@ -3,8 +3,10 @@ import { PROJECTS } from '@/content'
 
 export const metadata = {
   title: 'Top .NET & React Developer in Nepal - Roshan Poudel Services',
-  description: 'Leading .NET and React developer in Nepal. Expert AWS Solution Architect providing cloud architecture, React development, .NET applications, and Node.js solutions in Nepal.',
-  keywords: 'top dotnet developers in nepal, top react developers in nepal, best .NET developer nepal, best React developer nepal, Roshan Poudel',
+  description:
+    'Leading .NET and React developer in Nepal. Expert AWS Solution Architect providing cloud architecture, React development, .NET applications, and Node.js solutions in Nepal.',
+  keywords:
+    'top dotnet developers in nepal, top react developers in nepal, best .NET developer nepal, best React developer nepal, Roshan Poudel',
 }
 
 export default function ServicesPage() {
@@ -24,7 +26,7 @@ export default function ServicesPage() {
         {/* Services Section */}
         <section className="space-y-8">
           <h2 className="text-3xl font-bold text-center">Development Services</h2>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             {/* .NET Development */}
             <div className="p-6 border rounded-lg space-y-4">
@@ -91,15 +93,15 @@ export default function ServicesPage() {
         {/* Featured Projects */}
         <section className="space-y-8">
           <h2 className="text-3xl font-bold text-center">Featured Projects</h2>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             {Object.entries(PROJECTS).map(([key, project]) => (
               <div key={key} className="p-6 border rounded-lg space-y-4">
                 <h3 className="text-xl font-semibold">{project.name}</h3>
                 <p className="text-muted-foreground">{project.descriptor}</p>
-                <a 
-                  href={project.link} 
-                  target="_blank" 
+                <a
+                  href={project.link}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block px-4 py-2 bg-primary text-primary-foreground rounded hover:bg-primary/90 transition-colors"
                 >
@@ -114,10 +116,10 @@ export default function ServicesPage() {
         <section className="text-center space-y-6 p-8 bg-muted rounded-lg">
           <h2 className="text-3xl font-bold">Ready to Start Your Project?</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            As one of the top .NET developers in Nepal and leading React developers in Nepal, I'm ready to help you build exceptional digital solutions. Let's discuss your project requirements.
+            As one of the top .NET developers in Nepal and leading React developers in Nepal, I&rsquo;m ready to help you build exceptional digital solutions. Let&rsquo;s discuss your project requirements.
           </p>
           <div className="flex justify-center gap-4">
-            <a 
+            <a
               href="https://www.linkedin.com/in/roshan-poudel-a84145185/"
               target="_blank"
               rel="noopener noreferrer"
@@ -125,7 +127,7 @@ export default function ServicesPage() {
             >
               Contact on LinkedIn
             </a>
-            <a 
+            <a
               href="https://github.com/rroshan12"
               target="_blank"
               rel="noopener noreferrer"
@@ -138,4 +140,4 @@ export default function ServicesPage() {
       </div>
     </Container>
   )
-} 
+}
