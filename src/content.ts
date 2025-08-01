@@ -18,14 +18,14 @@ export const CONTENT = {
     person: {
       name: 'Roshan Poudel',
       taglines: [
-        'Cloud architect by day, code wizard by night.',
-        'Transforming caffeine into digital symphonies.',
-        'Where AWS meets pixel-perfect React magic.',
-        'Architecting cloud dreams, one commit at a time.',
-        'Debugging reality, one bug at a time.',
-        'Making the cloud dance to my code rhythm.',
-        'From .NET to Node.js, I speak fluent binary.',
-        'Red Hat Certified System Administrator, DevOps obsessed, cloud addicted.'
+        'Top .NET and React developer in Nepal - Cloud architect by day, code wizard by night.',
+        'Leading React developer in Nepal - Transforming caffeine into digital symphonies.',
+        'Best .NET developer in Nepal - Where AWS meets pixel-perfect React magic.',
+        'Top dotnet developers in Nepal - Architecting cloud dreams, one commit at a time.',
+        'Top react developers in Nepal - Debugging reality, one bug at a time.',
+        'Making the cloud dance to my code rhythm - Leading developer in Nepal.',
+        'From .NET to Node.js, I speak fluent binary - Top developer in Nepal.',
+        'Red Hat Certified System Administrator, DevOps obsessed, cloud addicted - Leading developer in Nepal.'
       ],
       pictures: [RoshanImage, RoshanImage2, RoshanImage3],
       cursor: CursorIcon,
@@ -49,7 +49,7 @@ export const CONTENT = {
   },
   homePage: {
     about: {
-      text: 'Cloud architect by day, code wizard by night. I transform caffeine into scalable AWS solutions while crafting pixel-perfect React experiences. When I\'m not architecting cloud infrastructures or debugging .NET applications, you\'ll find me optimizing Node.js performance or automating deployments as a Red Hat Certified System Administrator. Because in this digital realm, I don\'t just write code—I orchestrate digital symphonies.',
+      text: 'As one of the top .NET developers in Nepal and leading React developers in Nepal, I specialize in cloud architecture and modern web development. Roshan Poudel - AWS Solution Architect certified professional crafting scalable AWS solutions while building pixel-perfect React experiences. When I\'m not architecting cloud infrastructures or developing .NET applications, you\'ll find me optimizing Node.js performance or automating deployments as a Red Hat Certified System Administrator. Being among the best .NET developers in Nepal and top React developers in Nepal, I don\'t just write code—I orchestrate digital symphonies that drive business growth.',
       badges: [
         {text: 'AWS Solution Architect', icon: AWSIcon},
         {text: 'React', icon: ReactIcon},
@@ -73,7 +73,7 @@ export const PROJECTS = {
   },
   housebroker: {
     name: '.NET House Broker API',
-    descriptor: 'Real Estate Property Listing API',
+    descriptor: 'Real Estate Property Listing API - Top .NET Development in Nepal',
     image: HouseBrokerImage, // Using the dedicated housebroker image
     link: 'https://github.com/Rroshan12/HouseBrokerAPI',
     color: '#059669',
@@ -81,7 +81,7 @@ export const PROJECTS = {
   },
   listenitpro: {
     name: 'ListenItPro NuGet Package',
-    descriptor: '.NET  Sql Server Table Listener',
+    descriptor: '.NET Sql Server Table Listener - Leading .NET Development in Nepal',
     image: ListenItProImage, // Using the dedicated listenitpro image
     link: 'https://www.nuget.org/PACKAGES?q=ListenItPro&frameworks=&tfms=&includeComputedFrameworks=true&frameworkFilterMode=all&packagetype=&prerel=true&sortby=relevance',
     color: '#7C3AED',

@@ -11,6 +11,7 @@ import Header from '~/Global/Header'
 import YandexMetrika from '~/Global/Analytics'
 import GraphBackground from '~/Global/GraphBackground'
 import Footer from '~/Global/Footer'
+import StructuredData from '~/Global/StructuredData'
 
 export default function RootLayout({
   children,
@@ -19,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <StructuredData />
+      </head>
       <body className={cn(sfProDisplay.variable, 'space-y-16 sm:space-y-10', 'text-foreground', 'font-sans antialiased')}>
         <GraphBackground />
         <Header />
