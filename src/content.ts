@@ -11,6 +11,7 @@ import DotNetIcon from '$/icons/about/dotnet.svg'
 import NodeJSIcon from '$/icons/about/nodejs.svg'
 import RedHatIcon from '$/icons/about/redhat.svg'
 import HouseBrokerImage from '$/projects/housebroker.png'
+import Chatly from '$/projects/chatly.png'
 import ListenItProImage from '$/projects/listenitpro.png'
 
 export const CONTENT = {
@@ -84,6 +85,15 @@ export const PROJECTS = {
     descriptor: '.NET Sql Server Table Listener - Leading .NET Development in Nepal',
     image: ListenItProImage, // Using the dedicated listenitpro image
     link: 'https://www.nuget.org/PACKAGES?q=ListenItPro&frameworks=&tfms=&includeComputedFrameworks=true&frameworkFilterMode=all&packagetype=&prerel=true&sortby=relevance',
+    color: '#7C3AED',
+    featured: true,
+  },
+
+   chatly: {
+    name: 'Chatly-Omnichannel Chat Application Get Multiple Email and SMS',
+    descriptor: 'Made with .NET 8, React Js, Grpc',
+    image: Chatly, // Using the dedicated listenitpro image
+    link: 'https://github.com/Rroshan12/ChatlyOmnichannel',
     color: '#7C3AED',
     featured: true,
   },
