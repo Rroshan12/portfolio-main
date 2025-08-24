@@ -20,14 +20,14 @@ export default function Projects({view, delay}: {view: 'home' | 'works'; delay?:
     }
     acc[language].push([key, project])
     return acc
-  }, {} as Record<string, [string, any][]>)
+  }, {} as Record<string, [string, typeof PROJECTS[keyof typeof PROJECTS]][]>)
 
   // Define language display names and colors
   const languageConfig = {
-    '.NET': { name: '.NET Development', color: '#059669', icon: '💻' },
-    'React': { name: 'React Development', color: '#61DAFB', icon: '⚛️' },
-    'Node.js': { name: 'Node.js Development', color: '#339933', icon: '🔗' },
-    'Other': { name: 'Other Projects', color: '#6B7280', icon: '🌐' }
+    '.NET': { name: '.NET Development', icon: '💻' },
+    'React': { name: 'React Development', icon: '⚛️' },
+    'Node.js': { name: 'Node.js Development', icon: '🔗' },
+    'Other': { name: 'Other Projects', icon: '🌐' }
   }
 
   // State for active tab
@@ -61,7 +61,7 @@ export default function Projects({view, delay}: {view: 'home' | 'works'; delay?:
           </button>
 
           {/* Language-specific tabs */}
-          {Object.entries(projectsByLanguage).map(([language, projects]) => {
+          {Object.entries(projectsByLanguage).map(([language]) => {
             const config = languageConfig[language as keyof typeof languageConfig] || languageConfig.Other
             
             return (
@@ -99,7 +99,7 @@ export default function Projects({view, delay}: {view: 'home' | 'works'; delay?:
         {/* All Projects Tab */}
         {activeTab === 'All' && (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {allProjects.map(([key, project], index) => (
+            {allProjects.map(([key, project]) => (
               <div 
                 key={key} 
                 className="transform transition-all duration-300 hover:scale-105 hover:z-10"
@@ -122,7 +122,6 @@ export default function Projects({view, delay}: {view: 'home' | 'works'; delay?:
                   <span className="text-2xl">{languageConfig[language as keyof typeof languageConfig]?.icon || '🔧'}</span>
                   <h3 
                     className="text-xl font-bold text-white"
-                    style={{ color: languageConfig[language as keyof typeof languageConfig]?.color || '#6B7280' }}
                   >
                     {languageConfig[language as keyof typeof languageConfig]?.name || language}
                   </h3>
@@ -132,7 +131,7 @@ export default function Projects({view, delay}: {view: 'home' | 'works'; delay?:
 
               {/* Projects grid for this language */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                {projects.map(([key, project], index) => (
+                {projects.map(([key, project]) => (
                   <div 
                     key={key} 
                     className="transform transition-all duration-300 hover:scale-105 hover:z-10"
