@@ -71,6 +71,8 @@ export const PROJECTS = {
     videoUrl: 'https://krispcall-website.sgp1.cdn.digitaloceanspaces.com/20250305_154834/krispcall-homepage-gif-a111.mp4',
     color: '#3B82F6',
     featured: true,
+    technologies: ['React', 'Node.js', 'AI/ML'],
+    primaryLanguage: 'React'
   },
   housebroker: {
     name: '.NET House Broker API',
@@ -79,6 +81,8 @@ export const PROJECTS = {
     link: 'https://github.com/Rroshan12/HouseBrokerAPI',
     color: '#059669',
     featured: true,
+    technologies: ['.NET', 'C#', 'SQL Server', 'Entity Framework'],
+    primaryLanguage: '.NET'
   },
   listenitpro: {
     name: 'ListenItPro NuGet Package',
@@ -87,15 +91,17 @@ export const PROJECTS = {
     link: 'https://www.nuget.org/PACKAGES?q=ListenItPro&frameworks=&tfms=&includeComputedFrameworks=true&frameworkFilterMode=all&packagetype=&prerel=true&sortby=relevance',
     color: '#7C3AED',
     featured: true,
+    technologies: ['.NET', 'C#', 'SQL Server', 'NuGet'],
+    primaryLanguage: '.NET'
   },
-
-   chatly: {
+  chatly: {
     name: 'Chatly-Omnichannel Chat Application Get Multiple Email and SMS',
     descriptor: 'Made with .NET 8, React Js, Grpc',
     image: Chatly, // Using the dedicated listenitpro image
     link: 'https://github.com/Rroshan12/ChatlyOmnichannel',
     color: '#7C3AED',
     featured: true,
+    technologies: ['.NET 8', 'React', 'gRPC', 'Full Stack'],
+    primaryLanguage: '.NET'
   },
- 
 }
