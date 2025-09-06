@@ -40,21 +40,23 @@ const ChatWidget = () => {
               </div>
               <span className="font-semibold">Try My AI Assistant Nomi 🤖</span>
             </div>
-            <div className="h-120 flex flex-col border-t border-foreground/5">
+            <div className="h-[30rem] w-full border-t border-foreground/5">
               {showIframe ? (
-                <iframe
-                  src="https://example.com/login"
-                  className="w-full h-full border-0"
-                  title="AI Assistant Chat"
-                  allowFullScreen
-                />
+                <div className="w-full h-full">
+                  <iframe
+                    src="https://nomi-y1yg.onrender.com"
+                    className="w-full h-full border-0 block"
+                    title="AI Assistant Chat"
+                    allowFullScreen
+                  />
+                </div>
               ) : (
-              <div className="flex-1 flex flex-col items-center justify-center p-4">
+              <div className="w-full h-full flex flex-col items-center justify-center p-4">
                 <div className="relative mb-4">
                   <div className="absolute -inset-1 bg-blue-500 rounded-full opacity-75 animate-pulse"></div>
                   <div className="relative text-4xl">🤖</div>
                 </div>
-                <p className="text-lg font-medium text-gray-800">Coming Soon!</p>
+                <p className="text-lg font-medium text-gray-800">Nomi, Ask Me About Roshan!</p>
                 <p className="text-sm text-gray-600 mt-2">Ask Nomi About me, my experience and all </p>
                 <button 
                   onClick={(e) => {
