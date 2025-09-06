@@ -38,7 +38,7 @@ const ChatWidget = () => {
                 <div className={`absolute -top-1 -right-1 w-3 h-3 rounded-full ${beep ? 'bg-red-500 animate-ping' : 'bg-green-500'}`}></div>
                 <div className="w-3 h-3 rounded-full bg-green-500"></div>
               </div>
-              <span className="font-semibold">Try My AI Assistant Nomi 🤖</span>
+              <span className="font-semibold">Meet Nomi - My AI CV 🤖</span>
             </div>
             <div className="h-[30rem] w-full border-t border-foreground/5">
               {showIframe ? (
