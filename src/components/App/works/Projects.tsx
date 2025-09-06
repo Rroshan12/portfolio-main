@@ -74,8 +74,8 @@ export default function Projects({view, delay}: {view: 'home' | 'works'; delay?:
                   'hover:scale-105 active:scale-95',
                   'cursor-pointer',
                   activeTab === language
-                    ? 'bg-white/10 text-white border border-white/20'
-                    : 'text-gray-400 hover:text-white hover:border hover:border-white/20'
+                    ? 'bg-white/10 text-white border border-foreground/10'
+                    : 'text-gray-400 hover:text-white hover:border hover:border-gray-200'
                 )}
               >
                 <span className="flex items-center justify-center gap-2">
