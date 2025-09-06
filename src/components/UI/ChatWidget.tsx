@@ -6,6 +6,7 @@ const ChatWidget = () => {
   const [isOpen, setIsOpen] = useState(true);
   const [beep, setBeep] = useState(false);
   const [showIframe, setShowIframe] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const toggleChat = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -37,7 +38,7 @@ const ChatWidget = () => {
                 <div className={`absolute -top-1 -right-1 w-3 h-3 rounded-full ${beep ? 'bg-red-500 animate-ping' : 'bg-green-500'}`}></div>
                 <div className="w-3 h-3 rounded-full bg-green-500"></div>
               </div>
-              <span className="font-semibold">Try My AI Assistant 🤖</span>
+              <span className="font-semibold">Try My AI Assistant Nomi 🤖</span>
             </div>
             <div className="h-120 flex flex-col border-t border-foreground/5">
               {showIframe ? (
@@ -54,15 +55,33 @@ const ChatWidget = () => {
                   <div className="relative text-4xl">🤖</div>
                 </div>
                 <p className="text-lg font-medium text-gray-800">Coming Soon!</p>
-                <p className="text-sm text-gray-600 mt-2">Our AI assistant is being trained to help you better</p>
+                <p className="text-sm text-gray-600 mt-2">Ask Nomi About me, my experience and all </p>
                 <button 
                   onClick={(e) => {
                     e.stopPropagation();
-                    setShowIframe(true);
+                    setIsLoading(true);
+                    // Simulate loading for 1.5 seconds before showing iframe
+                    setTimeout(() => {
+                      setShowIframe(true);
+                      setIsLoading(false);
+                    }, 1500);
                   }}
-                  className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors duration-200 text-sm font-medium cursor-pointer border border-foreground/10"
+                  disabled={isLoading}
+                  className={`mt-6 px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors duration-200 text-sm font-medium cursor-pointer border border-foreground/10 flex items-center justify-center min-w-[120px] h-10 ${
+                    isLoading ? 'opacity-75 cursor-not-allowed' : ''
+                  }`}
                 >
-                  Try It Now
+                  {isLoading ? (
+                    <div className="flex items-center">
+                      <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>
+                      Loading...
+                    </div>
+                  ) : (
+                    'Try It Now'
+                  )}
                 </button>
                 <div className="mt-4 flex space-x-2">
                   {[0, 1, 2].map((i) => (
