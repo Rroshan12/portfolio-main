@@ -12,6 +12,7 @@ import NodeJSIcon from '$/icons/about/nodejs.svg'
 import RedHatIcon from '$/icons/about/redhat.svg'
 import HouseBrokerImage from '$/projects/housebroker.png'
 import Chatly from '$/projects/chatly.png'
+import Filet from '$/projects/filet.png'
 import ListenItProImage from '$/projects/listenitpro.png'
 
 export const CONTENT = {
@@ -103,5 +104,15 @@ export const PROJECTS = {
     featured: true,
     technologies: ['.NET 8', 'React', 'gRPC', 'Full Stack'],
     primaryLanguage: '.NET'
+  },
+  filet: {
+    name: 'Filet: A lightweight, flexible, and efficient Node.js middleware for handling file uploads.',
+    descriptor: 'Made with Nodejs, BusBoy, fs',
+    image: Filet,
+    link: 'https://github.com/Rroshan12/filet',
+    color:  '#339933',
+    featured: true,
+    technologies: ['Node.js', 'BusBoy', 'fs', 'Middleware'],
+    primaryLanguage: 'Node.js'
   },
 }

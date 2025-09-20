@@ -26,10 +26,11 @@ export default function Projects({view, delay}: {view: 'home' | 'works'; delay?:
   const languageConfig = {
     '.NET': { name: '.NET Development', icon: '💻' },
     'React': { name: 'React Development', icon: '⚛️' },
-    'Node.js': { name: 'Node.js Development', icon: '🔗' },
+    'Node.js': { name: 'Node.js Development', icon: '🚀' },
     'Other': { name: 'Other Projects', icon: '🌐' }
   }
 
+  console.log(projectsByLanguage,'hhh')
   // State for active tab
   const [activeTab, setActiveTab] = useState(Object.keys(projectsByLanguage)[0] || 'All')
 
