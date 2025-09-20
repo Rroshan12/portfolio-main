@@ -13,6 +13,7 @@ import RedHatIcon from '$/icons/about/redhat.svg'
 import HouseBrokerImage from '$/projects/housebroker.png'
 import Chatly from '$/projects/chatly.png'
 import Filet from '$/projects/filet.png'
+import Nomi from '$/projects/nomi.png'
 import ListenItProImage from '$/projects/listenitpro.png'
 
 export const CONTENT = {
@@ -113,6 +114,16 @@ export const PROJECTS = {
     color:  '#339933',
     featured: true,
     technologies: ['Node.js', 'BusBoy', 'fs', 'Middleware'],
+    primaryLanguage: 'Node.js'
+  },
+  nomi: {
+    name: 'Nomi: Ai Chat boat Assistant that answer my resume data, like email, experience, education, certification',
+    descriptor: 'Made with Nodejs, Lang Chain, Gemini Flash',
+    image: Nomi,
+    link: 'https://github.com/Rroshan12/nomi',
+    color:  '#339933',
+    featured: true,
+    technologies: ['Node.js', 'AI', 'Gemini Flash'],
     primaryLanguage: 'Node.js'
   },
 }
